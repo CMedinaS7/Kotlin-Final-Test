@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kotlinfinaltest">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".layout.posts"></activity>
+        <activity android:name=".layout.userInfo" />
+        <activity android:name=".layout.postTemplate" />
+        <activity android:name=".layout.userTemplate" />
+        <activity android:name=".layout.commentTemplate" />
+        <activity android:name=".layout.friends" />
+        <activity android:name=".layout.comments" />
+        <activity android:name=".layout.feed" />
+        <activity android:name=".layout.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
